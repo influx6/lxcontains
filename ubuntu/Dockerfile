@@ -1,4 +1,4 @@
-FROM golang:alpine
+FROM ubuntu
 
 MAINTAINER EWETUMO ALEXANDER 	<trinoxf@gmail.com>
 
