@@ -15,6 +15,6 @@ RUN bash -c "rm /go1.8.src.tar.gz"
 WORKDIR /go1.8/go/src
 ENV GOROOT_BOOTSTRAP /usr/lib/go-1.6
 RUN bash -c "OLDPATH='$PATH'; . ./make.bash '$@' --no-banner; PATH='$OLDPATH'"
-ENV PATH "/go1.8/go/bin:$PATH"
+ENV PATH "/go1.8/go/bin:/go/bin:$PATH"
 ENV GOROOT /go1.8/go
 ENV GOPATH /go/
